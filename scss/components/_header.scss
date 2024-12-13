@@ -5,28 +5,23 @@
 .container--header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navigation {
+    display: flex; 
+
     &__list {
         display: flex;
         list-style: none;
         align-items: center;
+        gap: 50px;
     }
     &__item {
-        margin-right: 50px;
         padding-bottom: 31px;
         padding-top: 32px;
         position: relative;
 }
-    &__item:first-child {
-        margin-right: 93px;
-        padding: 0;
-}
-
-    &__item:last-child {
-        margin-right: 0;
-    }
 
     &__link {
         display: block;
@@ -59,7 +54,6 @@
         }
 
 .contacts {
-    margin-left: 318px;
     &__list {
         display: flex;
         margin: 0;
