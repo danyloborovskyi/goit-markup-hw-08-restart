@@ -1,0 +1,38 @@
+.test {
+    display: flex;
+    justify-content: center;
+}
+
+.test-list {
+    display: flex;
+    gap: 10px;
+}
+
+.test-item {
+    display: flex;
+}
+
+.test-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: green;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 1250ms;
+}
+
+.test-icon {
+    fill: antiquewhite;
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 1250ms;
+}
+
+.test-link:hover,
+.test-link:focus {
+    background-color: var(--secondary-color);
+}
+.test-link:hover .test-icon,
+.test-link:focus .test-icon {
+    fill: green;
+}
