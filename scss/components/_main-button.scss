@@ -1,0 +1,36 @@
+.main-button {
+    width: 216px;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    color: white;
+    background-color: var(--secondary-color);
+    letter-spacing: 0.06em;
+    padding: 10px 24px;
+    border-radius: 4px;
+    transition: background-color var(--function);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        cursor: pointer;
+    }
+
+    &--footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+    }
+
+    &--submit {
+        width: 200px;
+        margin-left: 124px;
+        margin-top: 30px;
+    }
+}
+
+.icon-telegram {
+    margin-left: 10px;
+}

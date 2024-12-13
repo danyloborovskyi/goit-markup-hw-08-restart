@@ -1,0 +1,39 @@
+.what-do-we-do {
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--main-color);
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(47, 48, 58, 0.8);
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.172;
+        width: 370px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        color: white;
+        letter-spacing: 0.03em;
+        position: absolute;
+        bottom: 0;
+    }
+}
