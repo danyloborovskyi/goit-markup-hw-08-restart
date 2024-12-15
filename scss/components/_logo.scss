@@ -9,6 +9,10 @@
     letter-spacing: 0.03em;
     margin-right: 93px;
 
+    @media screen and (max-width: 480px) {
+        
+    }
+
 
     &__web {
         color: var(--secondary-color);

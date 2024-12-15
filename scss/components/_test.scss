@@ -1,38 +1,44 @@
 .test {
     display: flex;
     justify-content: center;
+    background-color: navajowhite;
+    gap: 30px;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+            max-width: 480px;
+            justify-content: space-between;
+            background-color: aliceblue;
+        }
 }
+
+.logo-test {
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    letter-spacing: 0.03em;}
 
 .test-list {
-    display: flex;
-    gap: 10px;
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 }
 
-.test-item {
-    display: flex;
-}
+.test-item {}
 
-.test-link {
+.test-link {}
+
+.test-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: green;
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 1250ms;
+    padding: 0;
+    width: 40px;
+    height: 40px;
 }
 
-.test-icon {
-    fill: antiquewhite;
-    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 1250ms;
-}
-
-.test-link:hover,
-.test-link:focus {
-    background-color: var(--secondary-color);
-}
-.test-link:hover .test-icon,
-.test-link:focus .test-icon {
-    fill: green;
-}
+.test-icon {}
