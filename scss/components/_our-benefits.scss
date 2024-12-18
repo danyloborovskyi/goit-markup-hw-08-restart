@@ -1,15 +1,13 @@
-.section--our-benefits {
-    padding-top: 94px;
-    padding-bottom: 0;
-}
-
 .our-benefits {
     &__headline {
         display: none;
     }
     &__list {
-        display: flex;
         gap: 30px;
+}
+
+.our-benefits__item:not(:last-child) {
+    margin-bottom: 30px;
 }
 
     &__icon-card {
@@ -22,6 +20,8 @@
     }
 
     &__subtitle {
+        display: flex;
+        justify-content: center;
         font-size: 14px;
         line-height: 1.17;
         text-transform: uppercase;
@@ -37,3 +37,46 @@
         line-height: 1.71;
     }
 }
+
+// DESKTOP
+
+// .section--our-benefits {
+//     padding-top: 94px;
+//     padding-bottom: 0;
+// }
+
+// .our-benefits {
+//     &__headline {
+//         display: none;
+//     }
+
+//     &__list {
+//         display: flex;
+//         gap: 30px;
+//     }
+
+//     &__icon-card {
+//         background-color: rgba(245, 244, 250, 1);
+//         display: flex;
+//         justify-content: center;
+//         padding: 25px 100px;
+//         margin-bottom: 30px;
+//         border-radius: 4px;
+//     }
+
+//     &__subtitle {
+//         font-size: 14px;
+//         line-height: 1.17;
+//         text-transform: uppercase;
+//         letter-spacing: 0.03em;
+//         margin-bottom: 10px;
+//         color: var(--main-color);
+//     }
+
+//     &__description {
+//         color: var(--description-color);
+//         letter-spacing: 0.03em;
+//         font-size: 14px;
+//         line-height: 1.71;
+//     }
+// }
