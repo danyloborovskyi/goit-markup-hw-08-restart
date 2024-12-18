@@ -33,7 +33,7 @@
               <a href="test.html" class="navigation__link">Контакти</a>
             </li>
           </ul>
-          <button class="menu">
+          <button class="menu js-open-menu">
             <svg class="menu__icon" width="40px" height="40px">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
@@ -474,7 +474,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button-close" data-modal-close>
@@ -534,6 +534,27 @@
         </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <div class="mobile-menu js-menu-container">
+      <button type="button" class="modal__button-close js-close-menu" data-modal-close>
+        <svg class="modal__button-close-icon" width="11px" height="11px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list__menu">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link navigation__link--active">Студія</a>
+          </li>
+          <li class="navigation__item">
+            <a href="portfolio.html" class="navigation__link">Портфоліо</a>
+          </li>
+          <li class="navigation__item">
+            <a href="test.html" class="navigation__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
