@@ -5,7 +5,7 @@
 
 .container--footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 // CONTACTS
 .footer {
@@ -88,3 +88,99 @@
         border-color: var(--secondary-color);
     }
 }
+
+// DESKTOP
+
+// .footer {
+//     background-color: #2F303A;
+//     padding: 60px 0;
+// }
+
+// .container--footer {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// // CONTACTS
+// .footer {
+//     &__item {
+//         margin-bottom: 9px;
+//         color: white;
+//     }
+
+//     &__item:last-child {
+//         margin-bottom: 0;
+//     }
+
+//     &__link {
+//         color: rgba(255, 255, 255, 0.6);
+//         font-style: normal;
+//         font-size: 14px;
+//         line-height: 1.71;
+//         letter-spacing: 0.03em;
+//         transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+//     }
+
+//     &__link--location {
+//         color: white;
+//     }
+
+//     &__link:hover,
+//     &__link:focus {
+//         color: var(--secondary-color);
+//     }
+// }
+
+// // SOCIAL MEDIA
+
+// .footer {
+//     &__social-media {
+//         padding-top: 12px;
+//         margin-left: 70px;
+//     }
+
+//     &__join {
+//         text-transform: uppercase;
+//         font-size: 14px;
+//         line-height: 1.172;
+//         color: #FFFFFF;
+//         letter-spacing: 0.03em;
+//         margin-bottom: 20px;
+//     }
+// }
+
+// // SUBSCRIPTION
+
+// .subscription {
+//     padding-top: 12px;
+
+//     &__title {
+//         text-transform: uppercase;
+//         font-size: 14px;
+//         line-height: 1.172;
+//         color: #FFFFFF;
+//         letter-spacing: 0.03em;
+//         margin-bottom: 20px;
+//     }
+
+//     &__form {
+//         display: flex;
+//     }
+
+//     &__input {
+//         background-color: transparent;
+//         height: 50px;
+//         width: 358px;
+//         border: 1px solid rgba(255, 255, 255, 0.3);
+//         border-radius: 4px;
+//         color: white;
+//         outline: none;
+//         transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+//         margin-right: 12px;
+//         padding: 15px 16px;
+//     }
+
+//     &__input:focus {
+//         border-color: var(--secondary-color);
+//     }
+// }

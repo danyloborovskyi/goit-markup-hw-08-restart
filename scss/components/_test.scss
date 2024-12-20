@@ -46,3 +46,18 @@
 }
 
 .test-icon {}
+
+// FLEX
+
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.flex-title {}
+
+.flex-info {}
