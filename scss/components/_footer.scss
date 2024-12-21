@@ -6,9 +6,23 @@
 .container--footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 // CONTACTS
 .footer {
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__item {
         margin-bottom: 9px;
         color: white;
@@ -22,7 +36,7 @@
         color: rgba(255, 255, 255, 0.6);
         font-style: normal;
         font-size: 14px;
-        line-height: 1.71;
+        line-height: 1.714;
         letter-spacing: 0.03em;
         transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     }
@@ -40,11 +54,15 @@
 
 .footer {
     &__social-media {
-        padding-top: 12px;
-        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 0;
     }
 
     &__join {
+        display: flex;
+        justify-content: center;
         text-transform: uppercase;
         font-size: 14px;
         line-height: 1.172;
@@ -56,7 +74,9 @@
 // SUBSCRIPTION
 
 .subscription {
-    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__title {
         text-transform: uppercase;
@@ -64,23 +84,25 @@
         line-height: 1.172;
         color: #FFFFFF;
         letter-spacing: 0.03em;
-        margin-bottom: 20px;
     }
 
     &__form {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     &__input {
         background-color: transparent;
         height: 50px;
-        width: 358px;
+        width: 100%;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         color: white;
         outline: none;
         transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-        margin-right: 12px;
+        margin: 20px 0;
         padding: 15px 16px;
     }
 
