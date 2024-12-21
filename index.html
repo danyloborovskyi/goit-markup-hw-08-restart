@@ -480,61 +480,63 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__button-close" data-modal-close>
-          <svg class="modal__button-close-icon" width="11px" height="11px">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <div>
-          <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-          <form name="customer-data">
-            <label for="user-name" class="modal__input-label">Ім'я</label>
-            <div class="modal__input-wrapper">
-              <input type="text" id="user-name" name="user-name" class="modal__input" />
-              <svg class="modal__input-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
+      <div class="container">
+        <div class="modal">
+          <button type="button" class="modal__button-close" data-modal-close>
+            <svg class="modal__button-close-icon" width="11px" height="11px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div>
+            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form name="customer-data">
+              <label for="user-name" class="modal__input-label">Ім'я</label>
+              <div class="modal__input-wrapper">
+                <input type="text" id="user-name" name="user-name" class="modal__input" />
+                <svg class="modal__input-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
 
-            <label for="user-phone" class="modal__input-label">Телефон</label>
-            <div class="modal__input-wrapper">
-              <input type="tel" id="user-phone" name="user-phone" class="modal__input" />
-              <svg class="modal__input-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-pick-up-phone"></use>
-              </svg>
-            </div>
+              <label for="user-phone" class="modal__input-label">Телефон</label>
+              <div class="modal__input-wrapper">
+                <input type="tel" id="user-phone" name="user-phone" class="modal__input" />
+                <svg class="modal__input-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-pick-up-phone"></use>
+                </svg>
+              </div>
 
-            <label for="user-email" class="modal__input-label">Пошта</label>
-            <div class="modal__input-wrapper">
-              <input type="email" id="user-email" name="user-email" class="modal__input" />
-              <svg class="modal__input-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-input-email"></use>
-              </svg>
-            </div>
+              <label for="user-email" class="modal__input-label">Пошта</label>
+              <div class="modal__input-wrapper">
+                <input type="email" id="user-email" name="user-email" class="modal__input" />
+                <svg class="modal__input-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-input-email"></use>
+                </svg>
+              </div>
 
-            <label for="user-comment" class="modal__input-label">Коментар</label>
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              placeholder="Введіть текст"
-              class="modal__comment"
-            ></textarea>
+              <label for="user-comment" class="modal__input-label">Коментар</label>
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                placeholder="Введіть текст"
+                class="modal__comment"
+              ></textarea>
 
-            <div class="modal__agreement-wrapper">
-              <input
-                type="checkbox"
-                id="terms-checkbox"
-                class="modal__checkbox-input visually-hidden"
-                name="terms-agreement"
-              />
-              <label for="terms-checkbox" class="modal__checkbox-label"
-                >Погоджуюся з розсилкою та приймаю
-                <a href="#" class="modal__terms-link">Умови договору</a></label
-              >
-            </div>
-            <button type="submit" class="main-button main-button--submit">Відправити</button>
-          </form>
+              <div class="modal__agreement-wrapper">
+                <input
+                  type="checkbox"
+                  id="terms-checkbox"
+                  class="modal__checkbox-input visually-hidden"
+                  name="terms-agreement"
+                />
+                <label for="terms-checkbox" class="modal__checkbox-label"
+                  >Погоджуюся з розсилкою та приймаю
+                  <a href="#" class="modal__terms-link">Умови договору</a></label
+                >
+              </div>
+              <button type="submit" class="main-button main-button--submit">Відправити</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
