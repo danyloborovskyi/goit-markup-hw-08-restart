@@ -35,7 +35,7 @@
               <a href="test.html" class="navigation__link">Контакти</a>
             </li>
           </ul>
-          <button class="menu">
+          <button class="menu js-open-menu">
             <svg class="menu__icon" width="40px" height="40px">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
@@ -87,14 +87,10 @@
             </ul>
           </div>
           <ul class="portfolio__list">
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
-                  <img
-                    src="./images/portfolio/technokryak.jpg"
-                    alt="Відкритий лептоп з сайтом"
-                    width="370px"
-                  />
+                  <img src="./images/portfolio/technokryak.jpg" alt="Відкритий лептоп з сайтом" />
                   <div class="portfolio__project-description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -107,7 +103,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
                   <img
@@ -123,7 +119,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
                   <img
@@ -139,7 +135,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
                   <img
@@ -155,7 +151,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
                   <img src="./images/portfolio/project-boxes.jpg" alt="2 коробки" width="370px" />
@@ -167,7 +163,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
                   <img
@@ -183,7 +179,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
                   <img
@@ -199,7 +195,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
                   <img
@@ -215,7 +211,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__card">
                   <img
@@ -237,12 +233,12 @@
     </main>
     <footer class="footer">
       <div class="container container--footer">
-        <div>
+        <div class="footer__contacts">
           <a href="index.html" class="logo logo--footer"
             ><span class="logo__web">Web</span>Studio</a
           >
           <address>
-            <ul>
+            <ul class="footer__list">
               <li class="footer__item">
                 <a href="https://www.google.com/maps" class="footer__link footer__link--location"
                   >м.Київ, пр-т Лесі Українки, 26</a
@@ -327,5 +323,26 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button type="button" class="modal__button-close js-close-menu" data-modal-close>
+        <svg class="modal__button-close-icon" width="11px" height="11px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list__menu">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link navigation__link--active">Студія</a>
+          </li>
+          <li class="navigation__item">
+            <a href="portfolio.html" class="navigation__link">Портфоліо</a>
+          </li>
+          <li class="navigation__item">
+            <a href="test.html" class="navigation__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
