@@ -36,12 +36,12 @@
 }
 
     &__title {
+        display: flex;
+        text-align: center;
         font-size: 20px;
         line-height: 1.172;
         color: var(--main-color);
         letter-spacing: 0.03em;
-        display: flex;
-        justify-content: center;
         margin-bottom: 12px;
     }
 
@@ -115,8 +115,8 @@
     &__checkbox-label {
         position: relative;
         color: var(--description-color);
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.171;
         padding-left: 36px;
         letter-spacing: 0.03em;
     }
@@ -162,6 +162,11 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 // DESKTOP 
