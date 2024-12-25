@@ -33,7 +33,20 @@
         background-color: #FFFFFF;
         cursor: pointer;
         padding: 0;
-}
+        transition: var(--function);
+    }
+
+    &__button-close--mobile {
+        border: none;
+        top: 21px;
+        right: 25px;
+    }
+
+    &__button-close--mobile:hover,
+    &__button-close--mobile:focus {
+        fill: var(--secondary-color);
+    }
+
 
     &__title {
         display: flex;
