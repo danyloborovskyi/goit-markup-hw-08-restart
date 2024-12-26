@@ -20,6 +20,22 @@
     }
 }
 
+// TABLET
+
+@media screen and (min-width: 768px) {
+    .logo {
+        padding-top: 26px;
+        padding-bottom: 25px;
+        margin-right: 88px;
+    }
+
+    .logo--footer {
+        margin-right: 0;
+        padding: 0;
+        
+    }
+}
+
 // DESKTOP 
 
 // .logo {
