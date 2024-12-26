@@ -137,101 +137,37 @@
 }
 
 
-// MIN-WIDTH 1200PX
+// DESKTOP
 
-// .container--header {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
+@media screen and (min-width: 1200px) {
 
-// .navigation {
-//     display: flex;
+.navigation {
+    display: flex;
 
-//     &__list {
-//         display: flex;
-//         list-style: none;
-//         align-items: center;
-//         gap: 50px;
+    &__list {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 50px;
 
-//     }
+    }
+}
 
-//     &__item {
-//         padding-bottom: 31px;
-//         padding-top: 32px;
-//         position: relative;
-//     }
+.contacts {
 
-//     &__link {
-//         display: block;
-//         color: var(--main-color);
-//         font-weight: 500;
-//         font-size: 14px;
-//         line-height: 1.14;
-//         letter-spacing: 0.02em;
-//         transition: color var(--function);
-//     }
+    &__list {
+        display: flex;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
 
-//     &__link:hover,
-//     &__link:focus {
-//         color: var(--secondary-color);
-//     }
+    &__item {
+        margin-right: 30px;
+    }
 
-//     &__link--active {
-//         color: var(--secondary-color);
-//     }
-
-//     &__link--active::before {
-//         position: absolute;
-//         width: 100%;
-//         height: 4px;
-//         border-radius: 2px;
-//         content: "";
-//         background-color: var(--secondary-color);
-//         bottom: -1px;
-//     }
-// }
-
-// .contacts {
-
-//     &__list {
-//         display: flex;
-//         margin: 0;
-//         list-style: none;
-//         padding: 0;
-//     }
-
-//     &__item {
-//         margin-right: 30px;
-//     }
-
-//     &__item:last-child {
-//         margin-right: 0;
-//     }
-
-//     &__link {
-//         color: var(--description-color);
-//         font-style: normal;
-//         font-size: 14px;
-//         line-height: 1.17;
-//         font-weight: 500;
-//         letter-spacing: 0.02em;
-//         display: flex;
-//         align-items: center;
-//         transition: color var(--function);
-//     }
-
-//     &__icon {
-//         fill: var(--description-color);
-//         margin-right: 10px;
-//         transition: fill var(--function);
-//     }
-
-//     &__link:hover,
-//     &__link:focus,
-//     &__link:hover .contacts__icon,
-//     &__link:focus .contacts__icon {
-//         color: var(--secondary-color);
-//         fill: var(--secondary-color);
-//     }
-// }
+    &__item:last-child {
+        margin-right: 0;
+    }
+}
+}
