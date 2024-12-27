@@ -184,7 +184,7 @@
 .footer {
     &__social-media {
         padding-top: 12px;
-        margin-left: 70px;
+        margin: 0;
     }
 
     &__join {
@@ -200,8 +200,10 @@
 // SUBSCRIPTION
 
 .subscription {
+    width: auto;
     padding-top: 12px;
     margin: 0;
+    display: block;
 
     &__title {
         text-transform: uppercase;
@@ -214,6 +216,8 @@
 
     &__form {
         display: flex;
+        flex-direction: row;
+        width: auto;
     }
 
     &__input {
