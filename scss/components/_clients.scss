@@ -53,48 +53,21 @@
     }
 }
 
-
-
 // DESKTOP
 
-// .clients {
-//     &__title {
-//         display: flex;
-//         justify-content: center;
-//         font-size: 36px;
-//         line-height: 1.171;
-//         margin-bottom: 50px;
-//         letter-spacing: 0.03em;
-//     }
+@media screen and (min-width: 1200px) {
 
-//     &__list {
-//         display: flex;
-//         justify-content: center;
-//         gap: 30px;
-//     }
+.clients {
+    &__title {
+        font-size: 36px;
+        line-height: 1.171;
+        margin-bottom: 50px;
+    }
 
-//     &__link {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         width: 170px;
-//         height: 92px;
-//         border: 1px solid #AFB1B8;
-//         border-radius: 4px;
-//         transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-//     }
-
-//     &__icon {
-//         fill: #AFB1B8;
-//         transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-//     }
-
-//     &__link:hover,
-//     &__link:focus,
-//     &__link:hover &__icon,
-//     &__link:focus &__icon {
-//         border-color: var(--secondary-color);
-//         fill: var(--secondary-color);
-//         cursor: pointer;
-//     }
-// }
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}
+}

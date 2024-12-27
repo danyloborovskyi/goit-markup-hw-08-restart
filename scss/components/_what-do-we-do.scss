@@ -1,6 +1,14 @@
 .section--what-do-we-do {
     display: none;
+}
 
+
+@media screen and (min-width: 1200px) {
+.section--what-do-we-do {
+    display: block;
+    }
+
+.what-do-we-do {
     &__title {
         display: flex;
         justify-content: center;
@@ -38,6 +46,8 @@
         bottom: 0;
     }
 }
+}
+
 
 // DESKTOP 
 

@@ -120,10 +120,6 @@
         flex-direction: row;
         justify-content: center;
     }
-    .footer__contacts {
-        
-        
-    }
 
     .footer__social-media {
         margin: 0 0 0 165px;
@@ -138,96 +134,103 @@
 
 // DESKTOP
 
-// .footer {
-//     background-color: #2F303A;
-//     padding: 60px 0;
-// }
+@media screen and (min-width: 1200px) {
 
-// .container--footer {
-//     display: flex;
-//     justify-content: space-between;
-// }
+.footer {
+    background-color: #2F303A;
+    padding: 60px 0;
+}
 
-// // CONTACTS
-// .footer {
-//     &__item {
-//         margin-bottom: 9px;
-//         color: white;
-//     }
+.container--footer {
+    display: flex;
+    justify-content: space-between;
+}
 
-//     &__item:last-child {
-//         margin-bottom: 0;
-//     }
+// CONTACTS
+.footer {
+    &__contacts {
+        display: flex;
+    }
+    &__item {
+        margin-bottom: 9px;
+        color: white;
+    }
 
-//     &__link {
-//         color: rgba(255, 255, 255, 0.6);
-//         font-style: normal;
-//         font-size: 14px;
-//         line-height: 1.71;
-//         letter-spacing: 0.03em;
-//         transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-//     }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
 
-//     &__link--location {
-//         color: white;
-//     }
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    }
 
-//     &__link:hover,
-//     &__link:focus {
-//         color: var(--secondary-color);
-//     }
-// }
+    &__link--location {
+        color: white;
+    }
 
-// // SOCIAL MEDIA
+    &__link:hover,
+    &__link:focus {
+        color: var(--secondary-color);
+    }
+}
 
-// .footer {
-//     &__social-media {
-//         padding-top: 12px;
-//         margin-left: 70px;
-//     }
+// SOCIAL MEDIA
 
-//     &__join {
-//         text-transform: uppercase;
-//         font-size: 14px;
-//         line-height: 1.172;
-//         color: #FFFFFF;
-//         letter-spacing: 0.03em;
-//         margin-bottom: 20px;
-//     }
-// }
+.footer {
+    &__social-media {
+        padding-top: 12px;
+        margin-left: 70px;
+    }
 
-// // SUBSCRIPTION
+    &__join {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.172;
+        color: #FFFFFF;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    }
+}
 
-// .subscription {
-//     padding-top: 12px;
+// SUBSCRIPTION
 
-//     &__title {
-//         text-transform: uppercase;
-//         font-size: 14px;
-//         line-height: 1.172;
-//         color: #FFFFFF;
-//         letter-spacing: 0.03em;
-//         margin-bottom: 20px;
-//     }
+.subscription {
+    padding-top: 12px;
+    margin: 0;
 
-//     &__form {
-//         display: flex;
-//     }
+    &__title {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.172;
+        color: #FFFFFF;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    }
 
-//     &__input {
-//         background-color: transparent;
-//         height: 50px;
-//         width: 358px;
-//         border: 1px solid rgba(255, 255, 255, 0.3);
-//         border-radius: 4px;
-//         color: white;
-//         outline: none;
-//         transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-//         margin-right: 12px;
-//         padding: 15px 16px;
-//     }
+    &__form {
+        display: flex;
+    }
 
-//     &__input:focus {
-//         border-color: var(--secondary-color);
-//     }
-// }
+    &__input {
+        background-color: transparent;
+        height: 50px;
+        width: 358px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        color: white;
+        outline: none;
+        transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        margin-right: 12px;
+        padding: 15px 16px;
+    }
+
+    &__input:focus {
+        border-color: var(--secondary-color);
+    }
+}
+}
