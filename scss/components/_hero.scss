@@ -1,9 +1,15 @@
 .section--hero {
     background-color: #2F303A;
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-image-480.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 118px 0;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-image-480@2x.jpg);
+        background-size: cover;
+}
 }
 
 .container--hero {
@@ -26,7 +32,15 @@
 
 // TABLET
 @media screen and (min-width: 768px) {
-
+    .section--hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-image-768.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-image-768@2x.jpg);
+            background-size: cover;
+        }
+}
 }
 
 
@@ -35,10 +49,11 @@
 
 .section--hero {
     padding: 200px 0;
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-image-1200.jpg);
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi) {
-            background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image@2x.jpg);
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/hero-image-1200@2x.jpg);
             background-size: cover;
         }
 }
@@ -55,4 +70,3 @@
     margin-bottom: 30px;
 }
 }
-
