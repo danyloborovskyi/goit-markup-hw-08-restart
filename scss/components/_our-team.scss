@@ -80,6 +80,10 @@
         &__item:not(:last-child) {
             margin: 0;
         }
+        
+        &__info {
+            padding-bottom: 24px;
+        }
 }
 }
 
@@ -98,6 +102,10 @@
         display: flex;
         gap: 30px;
         flex-wrap: nowrap;
+    }
+
+    &__info {
+        padding-bottom: 30px;
     }
 }
 }
